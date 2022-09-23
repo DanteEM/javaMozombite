@@ -1,8 +1,9 @@
-let nombredeAlumno = prompt ("Introduzca su nombre")
+const nombredeAlumno = prompt ("Introduzca su nombre")
 function saludar (Nombre) {
     alert ("Bienvenido Alumno " + Nombre)
 }
 saludar (nombredeAlumno)
+
 
 
 let nota1 = parseInt(prompt("Ingrese su nota del Primer Examen"));
@@ -77,6 +78,8 @@ const segundoExamen = new Notas ( "Segundo Examen", nota2)
 const tercerExamen = new Notas ("Tercer Examen", nota3)
 const cuartoExamen = new Notas ("Cuarto Examen", nota4)
 
+const arrayDeNotas = [primerExamen, segundoExamen, tercerExamen, cuartoExamen]
+
 const examenes = [];
 examenes.push(primerExamen);
 examenes.push(segundoExamen);
@@ -94,19 +97,14 @@ alert("Estas son las notas de tu primer hasta el ultimo examen " + listaDeNotas.
 const lstaDeNotas = document.getElementById("notas");
 
 
-listaDeNotas.forEach ( notas => {
+arrayDeNotas.forEach ( notas => {
     let li = document.createElement("li");
     li.innerHTML= `<p>${notas.nombre} </p>
     <p>Nota: ${notas.nota}</p>`
 
     lstaDeNotas.appendChild(li)
     
-
 })
 
-/* for(let notas of listaDeNotas){
-    let lista1 = document.createElement("li");
-    lista1.innerHTML = notas
-    listaDeNotas.appendChild(lista1)
-} */
+
 
