@@ -88,6 +88,25 @@ for (let Notas of examenes){
     console.log(Notas);
 }
 
-const listaDeNotas = ["Estas son las notas de tu primer hasta el ultimo examen", nota1, nota2, nota3, nota4]
-alert(listaDeNotas.join("\n"))
+const listaDeNotas = [nota1, nota2, nota3, nota4]
+alert("Estas son las notas de tu primer hasta el ultimo examen " + listaDeNotas.join("\n"))
+
+const lstaDeNotas = document.getElementById("notas");
+
+
+listaDeNotas.forEach ( notas => {
+    let li = document.createElement("li");
+    li.innerHTML= `<p>${notas.nombre} </p>
+    <p>Nota: ${notas.nota}</p>`
+
+    lstaDeNotas.appendChild(li)
+    
+
+})
+
+/* for(let notas of listaDeNotas){
+    let lista1 = document.createElement("li");
+    lista1.innerHTML = notas
+    listaDeNotas.appendChild(lista1)
+} */
 
