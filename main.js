@@ -103,8 +103,10 @@ arrayDeNotas.forEach ( notas => {
     <p>Nota: ${notas.nota}</p>`
 
     lstaDeNotas.appendChild(li)
-    
 })
+
+
+document.getElementById("Usuario").innerHTML = nombredeAlumno
 
 
 
