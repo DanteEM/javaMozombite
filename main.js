@@ -129,3 +129,7 @@ formularioQuejas.addEventListener("submit", (e) =>{
     console.log(arrayDeQuejas);
 formularioQuejas.reset();
 })
+
+formularioQuejas.onclick = () => {
+    console.log("interactuo con el formulario");
+}
