@@ -9,35 +9,37 @@
 </head>
 
 <body>
-<h1>Vamo a ver si aprobaste unu</h1>
+    <h1>Vamo a ver si aprobaste unu</h1>
 
-<div>Alumno: </div>
-<ul id="Usuario"></ul>
-<p>tus notas: </p>
-<ul id="notas"></ul>
-
-
-<script src="main.js"></script>
+    <div>Alumno: </div>
+    <ul id="Usuario"></ul>
+    <p>tus notas: </p>
+    <ul id="notas"></ul>
 
 
-<form>
-    <label for="nombreAlumno">Ingrese su nombre completo</label>
-    <input id="nombre" type="text">
-    <br><br>
+    <script src="main.js"></script>
 
-    <label for="seccion">Ingrese su grado y section</label>
-    <input id="gradoSection" type="text">
-    <br> <br>
-<label for="textarea">Mande su problema en el siguiente cuadro:</label>
-<br>
+    <h2>Estan en desacuerdo con algo?</h2>
 
-<textarea name="" id="queja" cols="30" rows="10"></textarea>
-<br><br>
+    <form id="formularioQuejas">
+        <label for="nombre">Ingrese su nombre completo</label>
+        <input id="nombre" type="text">
+        <br><br>
+
+        <label for="gradoSection">Ingrese su grado y section</label>
+        <input id="gradoSection" type="text">
+        <br> <br>
 
 
-    <button>Enviar</button>
-    
-</form>
+        <label for="queja">Mande su problema en el siguiente cuadro:</label>
+        <br>
+        <textarea name="" id="queja" cols="30" rows="10"></textarea>
+        <br><br>
+
+
+        <button>Enviar</button>
+
+    </form>
 </body>
 
 </html>
