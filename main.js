@@ -127,5 +127,5 @@ formularioQuejas.addEventListener("submit", (e) =>{
     const quejaCompleta = new Quejas(nombre.value, grado.value, quejas.value)
     arrayDeQuejas.push(quejaCompleta)
     console.log(arrayDeQuejas);
-
+formularioQuejas.reset();
 })
