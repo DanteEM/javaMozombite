@@ -8,8 +8,6 @@ saludar(nombredeAlumno)
 
 
 let nota1 = parseInt(prompt("Ingrese su nota del Primer Examen"));
-
-
 for (let i = 0; i < 5; i++) {
     if (nota1 <= 20) {
         break;
@@ -18,6 +16,7 @@ for (let i = 0; i < 5; i++) {
     }
 
 }
+
 let nota2 = parseInt(prompt("Ingrese su nota del Segundo Examen"));
 for (let i = 0; i < 5; i++) {
     if (nota2 <= 20) {
@@ -27,6 +26,7 @@ for (let i = 0; i < 5; i++) {
     }
 
 }
+
 let nota3 = parseInt(prompt("Ingrese su nota del Tercero Examen"));
 for (let i = 0; i < 5; i++) {
     if (nota3 <= 20) {
@@ -36,6 +36,7 @@ for (let i = 0; i < 5; i++) {
     }
 
 }
+
 let nota4 = parseInt(prompt("Ingrese su nota del Cuarto Examen"));
 for (let i = 0; i < 5; i++) {
     if (nota4 <= 20) {
@@ -133,3 +134,19 @@ formularioQuejas.reset();
 formularioQuejas.onclick = () => {
     console.log("interactuo con el formulario");
 }
+
+localStorage.setItem ("Alumno", nombredeAlumno )
+localStorage.setItem ("examen 1", nota1 )
+localStorage.setItem ("examen 2", nota2 )
+localStorage.setItem ("examen 3", nota3 )
+localStorage.setItem ("examen 4", nota4 )
+
+let localS = [
+    localStorage.getItem ("Alumno"),
+    localStorage.getItem ("examen 1"),
+    localStorage.getItem ("examen 2"),
+    localStorage.getItem ("examen 3"),
+    localStorage.getItem ("examen 4")
+]
+
+console.log(localS);
