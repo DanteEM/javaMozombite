@@ -6,9 +6,9 @@ function saludar(Nombre) {
 saludar(nombredeAlumno)
 
 
-
+let question = 0
 let nota1 = parseInt(prompt("Ingrese su nota del Primer Examen"));
-for (let i = 0; i < 5; i++) {
+for (question < 5; question++;) {
     if (nota1 <= 20) {
         break;
     } else {
@@ -18,7 +18,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 let nota2 = parseInt(prompt("Ingrese su nota del Segundo Examen"));
-for (let i = 0; i < 5; i++) {
+for (question < 5; question++;) {
     if (nota2 <= 20) {
         break;
     } else {
@@ -28,7 +28,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 let nota3 = parseInt(prompt("Ingrese su nota del Tercero Examen"));
-for (let i = 0; i < 5; i++) {
+for (question < 5; question++;) {
     if (nota3 <= 20) {
         break;
     } else {
@@ -37,8 +37,10 @@ for (let i = 0; i < 5; i++) {
 
 }
 
+
+
 let nota4 = parseInt(prompt("Ingrese su nota del Cuarto Examen"));
-for (let i = 0; i < 5; i++) {
+for (question < 5; question++;) {
     if (nota4 <= 20) {
         break;
     } else {
