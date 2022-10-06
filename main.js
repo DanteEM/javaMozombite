@@ -56,11 +56,8 @@ function sumaYDivision(Nota1, Nota2, Nota3, Nota4) {
 let resultado = sumaYDivision(nota1, nota2, nota3, nota4);
 alert("Tu calificacion final es " + resultado)
 
-if (resultado >= 11) {
-    alert("Felicidades! Estas aprobado")
-} else {
-    alert("Mis mas sinceras penas, estas desaprobado")
-}
+resultado >= 11 ? alert("Felicidades! Estas aprobado") : alert("Mis mas sinceras penas, estas desaprobado");
+
 
 
 
