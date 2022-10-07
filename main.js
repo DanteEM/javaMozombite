@@ -57,6 +57,7 @@ let resultado = sumaYDivision(nota1, nota2, nota3, nota4);
 alert("Tu calificacion final es " + resultado)
 
 resultado >= 11 ? alert("Felicidades! Estas aprobado") : alert("Mis mas sinceras penas, estas desaprobado");
+console.log(resultado <= 11 || "aprobo!");
 
 
 
@@ -88,6 +89,7 @@ for (let Notas of examenes) {
 }
 
 const listaDeNotas = [nota1, nota2, nota3, nota4]
+listaDeNotas.length === 4 && alert("Recuerda siempre estudiar")
 alert("Estas son las notas de tu primer hasta el ultimo examen " + listaDeNotas.join("\n"))
 
 const lstaDeNotas = document.getElementById("notas");
@@ -149,3 +151,4 @@ let localS = [
 ]
 
 console.log(localS);
+
