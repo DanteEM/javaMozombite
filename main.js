@@ -59,6 +59,13 @@ alert("Tu calificacion final es " + resultado)
 resultado >= 11 ? alert("Felicidades! Estas aprobado") : alert("Mis mas sinceras penas, estas desaprobado");
 console.log(resultado <= 11 || "aprobo!");
 
+const boton = document.getElementById("notaFinal");
+
+boton.addEventListener("click", () => {
+    Swal.fire ("tu nota final es " + resultado)
+
+})
+
 
 
 
