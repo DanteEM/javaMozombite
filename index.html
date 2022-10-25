@@ -9,38 +9,62 @@
 </head>
 
 <body>
-    <h1>Vamo a ver si aprobaste unu</h1>
-
-    <div>Alumno: </div>
-    <ul id="Usuario"></ul>
-    <p>tus notas: </p>
-    <ul id="notas"></ul>
-    <button id="notaFinal">Consulta tu nota final</button>
-
-
-   
-
-    <h2>Estan en desacuerdo con algo?</h2>
-
-    <form id="formularioQuejas">
-        <label for="nombre">Ingrese su nombre completo</label>
-        <input id="nombre" type="text">
-        <br><br>
-
-        <label for="gradoSection">Ingrese su grado y section</label>
-        <input id="gradoSection" type="text">
-        <br> <br>
-
-
-        <label for="queja">Mande su problema en el siguiente cuadro:</label>
+    <h2>Vamos a ver si aprobaste!</h2>
+    <br>
+    <form id="notas">
+        <label for="nombre">Ingrese su nombre</label>
+        <input type="string" value="nombre" id="nombre" placeholder="Ponga su nombre">
         <br>
-        <textarea name="" id="queja" cols="30" rows="10"></textarea>
-        <br><br>
+        <br>
+        <br>
+        <br>
 
-
-        <button>Enviar</button>
-
+        <label for="nota1">Ingrese examen 1</label>
+        <input type="number" value="10" id="nota1" placeholder="Ponga su nota">
+        <br>
+        <br>
+        <label for="nota1">Ingrese examen 2</label>
+        <input type="number" value="11" id="nota2" placeholder="Ponga su nota">
+        <br>
+        <br>
+        <label for="nota1">Ingrese examen 3</label>
+        <input type="number" value="12" id="nota3" placeholder="Ponga su nota">
+        <br>
+        <br>
+        <label for="nota1">Ingrese examen 4</label>
+        <input type="number" value="13" id="nota4" placeholder="Ponga su nota">
+        <br>
+        <br>
+        <button type="submit">resultado</button>
     </form>
+    <table id="table" border="2">
+        <thead>
+
+            <tr >
+                <td>
+                    Nombre:
+                </td>
+                <td>
+                    Examen 1:
+                </td>
+                <td>
+                    Examen 2:
+                </td>
+                <td>
+                    Examen 3:
+                </td>
+                <td>
+                    Examen 4:
+                </td>
+                <td>
+                    Promedio:
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="main.js"></script>
 </body>
